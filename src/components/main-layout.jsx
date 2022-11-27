@@ -4,7 +4,6 @@ import TaskList from './task-list.jsx';
 export default class MainLayout extends React.Component {
     constructor(props) {
         super(props);
-        console.log(this.GetTasks);
         this.state = {tasks: []};
         this.setTasks = this.setTasks.bind(this);
         this.getTasks = this.getTasks.bind(this);
