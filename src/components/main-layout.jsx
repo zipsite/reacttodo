@@ -57,6 +57,7 @@ export default class MainLayout extends React.Component {
     onCreate (e) {
         if(e.nativeEvent.path[1].className == "add") {
             this.createTask(e.currentTarget.children[0].innerHTML);
+            e.currentTarget.children[0].innerHTML = "Напишите";
         }
     }
 
